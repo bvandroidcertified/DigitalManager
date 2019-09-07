@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">DigiManager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Remplissage first</string>
+    <string name="menu_gallery">Remplissage second</string>
+    <string name="menu_slideshow">Nouveau formulaire</string>
+    <string name="menu_tools">Fiche de suivi projet</string>
+    <string name="menu_share">Trier Miniformulaire</string>
+    <string name="menu_send">Ajouter champs</string>
+    <string name="menu_fiiling">Remplissage</string>
+    <string name="menu_configuration">Configuration Relation</string>
+
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+    <!--Below the texts Used for the form of adding a field-->
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+
+    <string name="title_form_adding_field">Fiche de suivi de projet, budget, resources et délais</string>
+    <string name="btn_directory_title">Repertoire</string>
+    <string name="btn_edit_title">Modifier</string>
+    <string name="btn_attach_file_title">Joindre un fichier</string>
+    <string name="btn_responsible_title">Responsable</string>
+    <string name="btn_speaker_title">Intervenants</string>
+    <string name="btn_last_status_title">Dernier Statuts</string>
+    <string name="btn_evaluation_criterion_title">Critères evaluation</string>
+    <string name="btn_process_attach_title">Attache un processus</string>
+    <string name="btn_actors_title">Acteurs</string>
+    <string name="tv_champ_title">Champs</string>
+    <string name="tv_add_input_title">Ajouter un champ</string>
+
+
+    <string name="desc_img_folder">Icon designant un repertoir</string>
+    <string name="desc_img_join_file">Icon designant une jointure de fichier</string>
+    <string name="desc_img_responsible">Icon designant un responsable</string>
+
+    <string name="required_field_symbol">*</string>
+    <string name="hint_project_name"><font size="10">Nom du projet</font></string>
+    <string name="hint_start_date">Date debut</string>
+    <string name="hint_end_date">Date fin</string>
+    <string name="hint_percentage">Pourcentage auto</string>
+    <string name="hint_percentage_manuel">Pourcentage manuel</string>
+    <string name="hint_receipts">Recettes</string>
+    <string name="msg_sort">Trier</string>
+    <string name="hint_spending">Dépenses</string>
+    <string name="hint_budget">Budget</string>
+    <string name="hint_evaluation">Evaluation</string>
+    <string name="msg_balance">Solde</string>
+    <string name="msg_consumption">Consommation Budget</string>
+    <string name="msg_concluding">Condition Vert si solde > 0</string>
+    <string name="msg_gain_concluding">Afficher \'Gain\' si solde > 0</string>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+    <!-- - - Below the texts Used for project follow up - - -->
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+
+    <string name="title_project_follow_up">Formulaire de suivi de projet</string>
+    <string name="title_form_project_follow_up">Remplissage</string>
+    <string name="title_form_project_follow">Remplisser le formulaire</string>
+    <string name="save_btn">Enregistrer</string>
+    <string name="sign">Signez</string>
+    <string name="open_options">Afficher les options</string>
+    <string name="close_options">Fermer les options</string>
+    <string name="human_ressources">Resdources humaines</string>
+
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+    <!-- - - Below the texts Used for new form Interface - - -->
+    <!-- - - - - - - - - - - - - - - - - - - -  - - -  - - -->
+
+    <string name="title_new_form">Nouveau formulaire</string>
+    <string name="title_id">ID</string>
+    <string name="percent_symbol">%</string>
+    <string name="percent_value">0</string>
+    <string name="title_msg">Titre</string>
+    <string name="description_msg">Description</string>
+    <string name="time_limit_msg">Délai</string>
+    <string name="max_number">Nombre d\'utilisation maximale(0 infini)</string>
+    <string name="evaluation_form">Evaluation du formulaire</string>
+    <string name="hint_mini_form">Mini-formulaire</string>
+
+
+
+    <string name="action_reset">Reset</string>
+    <string name="no_selection">No Selection</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sort_ascending">Trier par ordre croissant</string>
+    <string name="sort_descending">Trier par ordre décroissant</string>
+    <string name="clear_sorting">Clear</string>
+    <string name="hiding_row_sample">Cacher 3. Echantillon de ligne</string>
+    <string name="showing_row_sample">Afficher 3. Echantillon de ligne</string>
+    <string name="scroll_to_column_position">Faites défiler jusqu\'à 15. position de la colonne</string>
+    <string name="scroll_to_row_position">Faites défiler jusqu\'à 5. rangée</string>
+    <string name="show_hide_the_column">Afficher / Cacher 1. colonne</string>
+    <string name="table_pagination_details">Page %s, affichage des élements %s - %s.</string>
+    <string-array name="moods">
+        <item></item>
+        <item>Heureux(se)</item>
+        <item>Triste</item>
+    </string-array>
+    <string-array name="gender">
+        <item></item>
+        <item>Mâle</item>
+        <item>Femelle</item>
+    </string-array>
+    <string-array name="items_per_page">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+        <item>50</item>
+        <item>Tout</item>
+    </string-array>
+
+</resources>

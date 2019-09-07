@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c3036</color>
+    <color name="colorPrimaryDark">#000710</color>
+    <color name="colorAccent">#455960</color>
+
+    <!--Le dimensions height et width du navigation_header-->
+    <color name="textColor">#ffffff</color>
+    <color name="background_form">#dddddd</color>
+    <color name="require_field_color">#be1d8e</color>
+
+    <color name="color_fab">#1d92be</color>
+    <color name="color_btn">#0f5068</color>
+    <color name="btn_color">#0f5068</color>
+    <color name="form_background">#7bbed7</color>
+
+    <color name="colorConfirmationDialog">#64FFDA</color>
+    <color name="background_icon">#be1d8e</color>
+
+
+
+    <color name="bg_line">#E7E7E7</color>
+    <color name="bg_color">#FF99DCD7</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="cell_text_color">#1f1f1f</color>
+    <color name="header_line_color">@android:color/holo_red_light</color>
+
+
+    <!-- Material Design TableView Colors -->
+    <color name="md_cell_text_color">#1f1f1f</color>
+    <color name="md_column_header_text_color">#696969</color>
+    <color name="md_highlight_row_background_color">#EEEEEE</color>
+    <color name="md_selected_background_color">#F5F5F5</color>
+    <color name="md_cell_line_color">#dbdbdb</color>
+
+    <!-- Overriding the default values of the tableView -->
+    <!-- <color name="cell_line_color">#dbdbdb</color> -->
+    <!-- <color name="table_view_selected_background_color">@color/md_selected_background_color</color> -->
+    <color name="default_background_color">@color/cell_background_color</color>
+</resources>

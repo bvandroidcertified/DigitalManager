@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_form"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RemplissageFirst">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Titre Pricipal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="40dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/title_form_project_follow_up"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/required_field_symbol"
+                            android:textColor="@color/require_field_color" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@color/textColor">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_project_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/textColor"
+                                android:ems="4"
+                                android:hint="@string/hint_project_name"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_project_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/required_field_symbol"
+                            android:textColor="@color/require_field_color" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@color/textColor">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_start_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/textColor"
+                                android:drawableRight="@drawable/ic_date_range_blue_24dp"
+                                android:ems="4"
+                                android:hint="@string/hint_start_date"
+                                android:inputType="date"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/required_field_symbol"
+                            android:textColor="@color/require_field_color" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@color/textColor">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_end_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/textColor"
+                                android:drawableRight="@drawable/ic_date_range_blue_24dp"
+                                android:ems="4"
+                                android:hint="@string/hint_end_date"
+                                android:inputType="date"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/darker_gray">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_percentage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/darker_gray"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="Avancement"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="0%"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/required_field_symbol"
+                            android:textColor="@color/require_field_color" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/Search_receipts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="@string/hint_receipts"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_sort_receipts"
+                            android:layout_width="60dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/color_fab"
+                            android:gravity="center"
+                            android:text="@string/msg_sort"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_receipts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/required_field_symbol"
+                            android:textColor="@color/require_field_color" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/Search_spending"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="@string/hint_spending"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_sort_spending"
+                            android:layout_width="60dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/color_fab"
+                            android:gravity="center"
+                            android:text="@string/msg_sort"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_spending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="#5fba7d">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_balance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#5fba7d"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="@string/msg_balance"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_conclusion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/msg_concluding" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/Search_project_budget"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal"
+                            app:DoneSearchTintColor="@android:color/white"
+                            app:RevealEmptyText="Budget"
+                            app:RevealViewBackgroundColor="@android:color/white"
+                            app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+                            app:ShowBorders="false" />
+
+                        <Button
+                            android:id="@+id/btn_project_budget"
+                            android:layout_width="0dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_fab"
+                            android:gravity="center"
+                            android:text="@string/msg_sort"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_project_budget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_monthly_percentage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="Pourcentage mansuel"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="0%"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_monthly_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/Search_lend"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal"
+                            app:DoneSearchTintColor="@android:color/white"
+                            app:RevealEmptyText="PRET"
+                            app:RevealViewBackgroundColor="@android:color/white"
+                            app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+                            app:ShowBorders="false" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_lend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/darker_gray">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_consumption_budget"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/darker_gray"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="Consommation budget"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="0"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_consumption_budget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/darker_gray">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_gain_condition"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/darker_gray"
+                                android:ems="4"
+                                android:focusable="false"
+                                android:hint="Consommation budget"
+                                android:inputType="text"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="14sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_gain_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:src="@drawable/ic_add_white_24dp"
+                            app:fabSize="mini" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_gain_conclusion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Affichar Gain si Solde > 0" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#c8d4d9"
+                        android:orientation="vertical"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp">
+
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/Search_status"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="3"
+                                android:gravity="center_horizontal"
+                                app:DoneSearchTintColor="@android:color/white"
+                                app:RevealEmptyText="Status"
+                                app:RevealViewBackgroundColor="@android:color/white"
+                                app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+                                app:ShowBorders="false" />
+
+                            <Button
+                                android:id="@+id/btn_status"
+                                android:layout_width="0dp"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@color/color_fab"
+                                android:gravity="center"
+                                android:text="@string/msg_sort"
+                                android:textAllCaps="true"
+                                android:textColor="@color/textColor" />
+
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:src="@drawable/ic_add_white_24dp"
+                                app:fabSize="mini" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/required_field_symbol"
+                                android:textColor="@color/require_field_color" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="5"
+                                android:background="@color/textColor">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_date_change_status"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/textColor"
+                                    android:drawableRight="@drawable/ic_date_range_blue_24dp"
+                                    android:ems="4"
+                                    android:hint="@string/hint_start_date"
+                                    android:inputType="date"
+                                    android:paddingLeft="4dp"
+                                    android:paddingRight="4dp"
+                                    android:textSize="14sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_date_change_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:src="@drawable/ic_add_white_24dp"
+                                app:fabSize="mini" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingRight="4dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:text="@string/required_field_symbol"
+                                            android:textColor="@color/require_field_color" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="4dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_weight="1"
+                                            android:ems="4"
+                                            android:padding="4dp"
+                                            android:text="@string/sign"
+                                            android:textSize="14sp" />
+
+                                        <android.support.design.widget.FloatingActionButton
+                                            android:id="@+id/fab_project"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:backgroundTint="@android:color/darker_gray"
+                                            android:src="@drawable/ic_add_white_24dp"
+                                            app:fabSize="mini" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <com.github.gcacace.signaturepad.views.SignaturePad
+                                            android:id="@+id/signature_pad"
+                                            android:layout_width="0dp"
+                                            android:layout_height="130dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="16dp"
+                                            android:layout_marginRight="24dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            app:penColor="@android:color/black"
+                                            app:penMaxWidth="20dp"
+                                            app:penMinWidth="10dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:text="@string/required_field_symbol"
+                                            android:textColor="@color/require_field_color" />
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/Search_human_res"
+                                            clearOnDoubleClick="true"
+                                            android:layout_width="0dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_weight="4"
+                                            android:gravity="center_horizontal"
+                                            app:DoneSearchTintColor="@android:color/white"
+                                            app:RevealEmptyText="@string/human_ressources"
+                                            app:RevealViewBackgroundColor="@android:color/white"
+                                            app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+                                            app:ShowBorders="false" />
+
+                                        <Button
+                                            android:id="@+id/btn_sort_1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="4dp"
+                                            android:layout_weight="1"
+                                            android:background="@color/color_fab"
+                                            android:gravity="center"
+                                            android:text="@string/msg_sort"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/textColor" />
+
+
+                                        <android.support.design.widget.FloatingActionButton
+                                            android:id="@+id/fab_receipts2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:backgroundTint="@android:color/darker_gray"
+                                            android:src="@drawable/ic_add_white_24dp"
+                                            app:fabSize="mini" />
+
+                                    </LinearLayout>
+
+                                    <android.support.v7.widget.CardView
+                                        android:id="@+id/save_button"
+                                        android:layout_width="300dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="24dp"
+                                        app:cardBackgroundColor="@color/color_btn"
+                                        app:cardElevation="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="@string/save_btn"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/textColor" />
+
+                                    </android.support.v7.widget.CardView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
